@@ -138,7 +138,7 @@
     (stop-server))
   (setq *app*
         (make-instance 'vhost
-                       :address "127.0.0.1"
+                       :address "0.0.0.0"
                        :port port
                        :taskmaster (make-instance 'tbnl:one-thread-per-connection-taskmaster)))
   
